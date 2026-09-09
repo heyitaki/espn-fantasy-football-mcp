@@ -80,7 +80,7 @@ export function createServer({ config, fetch: fetchImpl }: ServerOptions): McpSe
 
   async function submit(payload: TransactionPayload, dryRun: boolean): Promise<CallToolResult> {
     if (dryRun) return response({ dryRun, payload }, formatWrite(dryRun, payload));
-    const result = await client.postTransaction(payload);
+    const result = redactMember(await client.postTransaction(payload));
     return response({ dryRun, payload, result }, formatWrite(dryRun, payload, result));
   }
 
@@ -285,6 +285,13 @@ export function createServer({ config, fetch: fetchImpl }: ServerOptions): McpSe
   }), args.dryRun)));
 
   return server;
+}
+
+// ESPN echoes the SWID back as memberId; keep it out of tool output that clients log.
+function redactMember(result: unknown): unknown {
+  if (!result || typeof result !== "object" || Array.isArray(result)) return result;
+  const { memberId: _memberId, ...rest } = result as Record<string, unknown>;
+  return rest;
 }
 
 function response(structuredContent: Record<string, unknown>, text: string): CallToolResult {

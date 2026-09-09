@@ -14,7 +14,7 @@ interface ToolResult {
 
 function routes(extra: Record<string, unknown> = {}) {
   return {
-    "/transactions/": { id: "tx-9", status: "EXECUTED" },
+    "/transactions/": { id: "tx-9", status: "EXECUTED", memberId: SWID },
     "kona_player_info": fixture("free-agents.json"),
     [LEAGUE_PATH]: fixture("league.json"),
     "/seasons/2026?": fixture("pro-teams.json"),
@@ -226,7 +226,10 @@ test("dryRun returns the payload and never posts", async () => {
 
 test("add_player, drop_player and submit_waiver_claim post the expected transactions", async () => {
   const { call, fake, close } = await connect();
-  await call("add_player", { playerId: 4697815 });
+  const added = await call("add_player", { playerId: 4697815 });
+  // The SWID that ESPN echoes back never reaches tool output.
+  assert.deepEqual((added.structuredContent as { result: unknown }).result, { id: "tx-9", status: "EXECUTED" });
+  assert.doesNotMatch(added.content[0]!.text!, /memberId|AAAA-BBBB/);
   await call("drop_player", { playerId: 4429795 });
   await call("submit_waiver_claim", { playerId: 4569618, dropPlayerId: 4429795, bid: 3 });
   const posts = fake.requests.filter((r) => r.method === "POST").map((r) => r.body as { type: string; bidAmount?: number; items: unknown[] });
