@@ -158,7 +158,9 @@ export function createServer({ config, fetch: fetchImpl }: ServerOptions): McpSe
       scoringPeriodId: ctx.week,
       filter: { players: {
         filterName: { value: args.query }, filterStatus: { value: ALL_PLAYER_STATUSES },
-        limit: args.limit, offset: 0, filterRanksForScoringPeriodIds: { value: [ctx.week] },
+        // ESPN rejects a limit without a sort ("Limit request must be accompanied by a sort").
+        limit: args.limit, offset: 0, [FREE_AGENT_SORT_KEYS.percentOwned]: { sortPriority: 1, sortAsc: false },
+        filterRanksForScoringPeriodIds: { value: [ctx.week] },
       } },
     });
     const matches = new Map<number, SearchPlayer>();

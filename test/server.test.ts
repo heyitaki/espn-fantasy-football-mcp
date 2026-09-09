@@ -151,12 +151,17 @@ test("get_free_agents defaults to sorting by percent owned with a sane limit", a
 });
 
 test("search_players finds rostered and unrostered players by name", async () => {
-  const { call, close } = await connect();
+  const { call, fake, close } = await connect();
   const res = await call("search_players", { query: "allen" });
   const sc = res.structuredContent as { players: Array<{ name: string; teamId: number | null; teamName: string | null; status: string }> };
   const names = sc.players.map((p) => p.name).sort();
   assert.deepEqual(names, ["Braelon Allen", "Josh Allen"]);
   assert.equal(sc.players.find((p) => p.name === "Josh Allen")!.teamName, "Home Team");
+  // ESPN returns 400 for a limited player query that carries no sort.
+  const req = fake.requests.find((r) => r.url.searchParams.get("view") === "kona_player_info")!;
+  const filter = JSON.parse(req.headers.get("x-fantasy-filter")!);
+  assert.equal(filter.players.filterName.value, "allen");
+  assert.deepEqual(filter.players.sortPercOwned, { sortPriority: 1, sortAsc: false });
   await close();
 });
 
