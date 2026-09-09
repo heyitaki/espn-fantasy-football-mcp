@@ -5,7 +5,7 @@ import { fakeFetch, fixture, ESPN_S2, SWID, READS_HOST, WRITES_HOST, LEAGUE_PATH
 
 function client(fetchImpl: typeof fetch, extra: Partial<ConstructorParameters<typeof EspnClient>[0]> = {}) {
   return new EspnClient({
-    leagueId: 3243,
+    leagueId: 123456,
     season: 2026,
     credentials: { espnS2: ESPN_S2, swid: SWID },
     fetch: fetchImpl,
@@ -16,7 +16,7 @@ function client(fetchImpl: typeof fetch, extra: Partial<ConstructorParameters<ty
 test("getLeague hits the reads host with every view and the cookie header", async () => {
   const fake = fakeFetch({ [LEAGUE_PATH]: fixture("league.json") });
   const data = await client(fake.fetch).getLeague(["mTeam", "mRoster"], { scoringPeriodId: 5 });
-  assert.equal((data as { id: number }).id, 3243);
+  assert.equal((data as { id: number }).id, 123456);
 
   const req = fake.requests[0]!;
   assert.equal(req.method, "GET");

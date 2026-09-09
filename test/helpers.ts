@@ -37,7 +37,11 @@ export function fakeFetch(
     requests.push({ url, method, headers, body });
     for (const [needle, route] of Object.entries(routes)) {
       if (url.href.includes(needle)) {
-        const isStatus = route !== null && typeof route === "object" && "status" in (route as object);
+        const isStatus =
+          route !== null &&
+          typeof route === "object" &&
+          "body" in (route as object) &&
+          typeof (route as { status?: unknown }).status === "number";
         const status = isStatus ? (route as { status: number }).status : 200;
         const payload = isStatus ? (route as { body: unknown }).body : route;
         return new Response(JSON.stringify(payload), {
@@ -56,4 +60,4 @@ export const ESPN_S2 = "AEB%2Ftest%2Fcookie%3D%3D";
 
 export const READS_HOST = "lm-api-reads.fantasy.espn.com";
 export const WRITES_HOST = "lm-api-writes.fantasy.espn.com";
-export const LEAGUE_PATH = "/apis/v3/games/ffl/seasons/2026/segments/0/leagues/3243";
+export const LEAGUE_PATH = "/apis/v3/games/ffl/seasons/2026/segments/0/leagues/123456";

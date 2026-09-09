@@ -1,5 +1,5 @@
 {
-  "id": 3243,
+  "id": 123456,
   "seasonId": 2026,
   "gameId": 1,
   "segmentId": 0,
@@ -13,7 +13,7 @@
     "waiverLastExecutionDate": 1791619200000
   },
   "settings": {
-    "name": "Balls",
+    "name": "Test League",
     "size": 2,
     "rosterSettings": {
       "isUsingUndroppableList": true,
@@ -51,8 +51,8 @@
   "teams": [
     {
       "id": 7,
-      "abbrev": "GMW",
-      "name": "gibb me win",
+      "abbrev": "HOME",
+      "name": "Home Team",
       "owners": ["{11111111-AAAA-BBBB-CCCC-DDDDDDDDDDDD}"],
       "waiverRank": 9,
       "playoffSeed": 2,
@@ -358,8 +358,8 @@
     },
     {
       "id": 3,
-      "abbrev": "DDB",
-      "name": "Deimon Devilbats",
+      "abbrev": "AWAY",
+      "name": "Away Team",
       "owners": ["{22222222-AAAA-BBBB-CCCC-DDDDDDDDDDDD}"],
       "waiverRank": 1,
       "playoffSeed": 9,

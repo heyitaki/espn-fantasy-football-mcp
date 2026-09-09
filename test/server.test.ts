@@ -26,7 +26,7 @@ async function connect(opts: { readOnly?: boolean; teamId?: number; routes?: Rec
   const fake = fakeFetch(routes(opts.routes));
   const server = createServer({
     config: {
-      leagueId: 3243,
+      leagueId: 123456,
       season: 2026,
       teamId: "teamId" in opts ? opts.teamId : 7,
       credentials: { espnS2: ESPN_S2, swid: SWID },
@@ -43,14 +43,14 @@ async function connect(opts: { readOnly?: boolean; teamId?: number; routes?: Rec
 }
 
 test("loadConfig reads the environment and defaults the season to the current year", () => {
-  const cfg = loadConfig({ ESPN_LEAGUE_ID: "3243", ESPN_S2: ESPN_S2, ESPN_SWID: SWID, ESPN_TEAM_ID: "7" });
-  assert.equal(cfg.leagueId, 3243);
+  const cfg = loadConfig({ ESPN_LEAGUE_ID: "123456", ESPN_S2: ESPN_S2, ESPN_SWID: SWID, ESPN_TEAM_ID: "7" });
+  assert.equal(cfg.leagueId, 123456);
   assert.equal(cfg.teamId, 7);
   assert.equal(cfg.season, new Date().getFullYear());
   assert.equal(cfg.readOnly, false);
   assert.deepEqual(cfg.credentials, { espnS2: ESPN_S2, swid: SWID });
 
-  const ro = loadConfig({ ESPN_LEAGUE_ID: "3243", ESPN_SEASON: "2025", ESPN_READ_ONLY: "1" });
+  const ro = loadConfig({ ESPN_LEAGUE_ID: "123456", ESPN_SEASON: "2025", ESPN_READ_ONLY: "1" });
   assert.equal(ro.season, 2025);
   assert.equal(ro.readOnly, true);
   assert.equal(ro.teamId, undefined);
@@ -89,7 +89,7 @@ test("get_league returns league info and teams", async () => {
   const res = await call("get_league");
   assert.equal(res.isError, undefined);
   const sc = res.structuredContent as { league: { name: string; currentWeek: number }; teams: Array<{ teamId: number; waiverRank: number }> };
-  assert.equal(sc.league.name, "Balls");
+  assert.equal(sc.league.name, "Test League");
   assert.equal(sc.league.currentWeek, 5);
   assert.equal(sc.teams.find((t) => t.teamId === 7)!.waiverRank, 9);
   await close();
@@ -104,10 +104,14 @@ test("get_roster defaults to the configured team and the current week", async ()
   assert.equal(sc.players.length, 11);
   assert.equal(sc.players[0]!.name, "Josh Allen");
   assert.equal(sc.players.find((p) => p.name === "Xavier Worthy")!.opponent, "BYE");
-  const leagueReq = fake.requests.find((r) => r.url.searchParams.has("view") && r.url.searchParams.getAll("view").includes("mRoster"))!;
-  assert.equal(leagueReq.url.searchParams.get("scoringPeriodId"), "5");
   // The text content is a readable summary, not a JSON dump.
   assert.match(res.content[0]!.text!, /Josh Allen/);
+  // Without a week, one league fetch with ESPN's default period is enough; an explicit week is passed through.
+  const rosterRequests = () => fake.requests.filter((r) => r.url.searchParams.getAll("view").includes("mRoster"));
+  assert.equal(rosterRequests().length, 1);
+  assert.equal(rosterRequests()[0]!.url.searchParams.get("scoringPeriodId"), null);
+  await call("get_roster", { week: 4 });
+  assert.equal(rosterRequests()[1]!.url.searchParams.get("scoringPeriodId"), "4");
   await close();
 });
 
@@ -152,7 +156,7 @@ test("search_players finds rostered and unrostered players by name", async () =>
   const sc = res.structuredContent as { players: Array<{ name: string; teamId: number | null; teamName: string | null; status: string }> };
   const names = sc.players.map((p) => p.name).sort();
   assert.deepEqual(names, ["Braelon Allen", "Josh Allen"]);
-  assert.equal(sc.players.find((p) => p.name === "Josh Allen")!.teamName, "gibb me win");
+  assert.equal(sc.players.find((p) => p.name === "Josh Allen")!.teamName, "Home Team");
   await close();
 });
 

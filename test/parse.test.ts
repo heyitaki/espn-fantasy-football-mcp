@@ -35,9 +35,9 @@ test("buildProTeamIndex exposes abbreviation, bye week and the week's game", () 
 
 test("parseLeagueInfo reads week, roster shape and waiver rules", () => {
   const info = parseLeagueInfo(league);
-  assert.equal(info.leagueId, 3243);
+  assert.equal(info.leagueId, 123456);
   assert.equal(info.season, 2026);
-  assert.equal(info.name, "Balls");
+  assert.equal(info.name, "Test League");
   assert.equal(info.currentWeek, 5);
   assert.equal(info.currentMatchupPeriod, 5);
   assert.equal(info.isActive, true);
@@ -56,8 +56,8 @@ test("parseTeams resolves owners to member names and carries waiver rank", () =>
   const teams = parseTeams(league);
   assert.equal(teams.length, 2);
   const mine = teams.find((t) => t.teamId === 7)!;
-  assert.equal(mine.name, "gibb me win");
-  assert.equal(mine.abbrev, "GMW");
+  assert.equal(mine.name, "Home Team");
+  assert.equal(mine.abbrev, "HOME");
   assert.deepEqual(mine.owners, ["manager_a"]);
   assert.deepEqual(mine.record, { wins: 3, losses: 1, ties: 0 });
   assert.equal(mine.pointsFor, 512.4);
@@ -137,8 +137,8 @@ test("parseMatchups reports both sides with names, points and live projections",
   assert.equal(week5.length, 1);
   const m = week5[0]!;
   assert.equal(m.week, 5);
-  assert.deepEqual(m.home, { teamId: 3, name: "Deimon Devilbats", points: 0, projectedPoints: 101.4 });
-  assert.deepEqual(m.away, { teamId: 7, name: "gibb me win", points: 0, projectedPoints: 113.5 });
+  assert.deepEqual(m.home, { teamId: 3, name: "Away Team", points: 0, projectedPoints: 101.4 });
+  assert.deepEqual(m.away, { teamId: 7, name: "Home Team", points: 0, projectedPoints: 113.5 });
   assert.equal(m.winner, "UNDECIDED");
 
   const week1 = parseMatchups(league, 1);
