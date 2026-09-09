@@ -1,0 +1,67 @@
+{
+  "players": [
+    {
+      "id": 4697815,
+      "onTeamId": 0,
+      "status": "FREEAGENT",
+      "player": {
+        "id": 4697815,
+        "fullName": "Kaleb Johnson",
+        "firstName": "Kaleb",
+        "lastName": "Johnson",
+        "defaultPositionId": 2,
+        "proTeamId": 23,
+        "eligibleSlots": [2, 3, 23, 7, 20, 21],
+        "injured": false,
+        "injuryStatus": "ACTIVE",
+        "ownership": { "percentOwned": 41.2, "percentChange": 22.7, "percentStarted": 5.0 },
+        "stats": [
+          { "id": "102026", "seasonId": 2026, "scoringPeriodId": 0, "statSourceId": 1, "statSplitTypeId": 0, "appliedTotal": 120.5 },
+          { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 9.6 }
+        ]
+      },
+      "ratings": { "0": { "positionalRanking": 38, "totalRanking": 110, "totalRating": 33.1 } }
+    },
+    {
+      "id": 4569618,
+      "onTeamId": 0,
+      "status": "WAIVERS",
+      "player": {
+        "id": 4569618,
+        "fullName": "Garrett Wilson",
+        "firstName": "Garrett",
+        "lastName": "Wilson",
+        "defaultPositionId": 3,
+        "proTeamId": 20,
+        "eligibleSlots": [3, 4, 5, 23, 7, 20, 21],
+        "injured": true,
+        "injuryStatus": "OUT",
+        "ownership": { "percentOwned": 78.0, "percentChange": -15.3, "percentStarted": 20.1 },
+        "stats": [
+          { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 0 }
+        ]
+      },
+      "ratings": { "0": { "positionalRanking": 20, "totalRanking": 60, "totalRating": 50.2 } }
+    },
+    {
+      "id": -16034,
+      "onTeamId": 0,
+      "status": "FREEAGENT",
+      "player": {
+        "id": -16034,
+        "fullName": "Texans D/ST",
+        "firstName": "Texans",
+        "lastName": "D/ST",
+        "defaultPositionId": 16,
+        "proTeamId": 34,
+        "eligibleSlots": [16, 20, 21],
+        "injured": false,
+        "ownership": { "percentOwned": 55.5, "percentChange": 3.3, "percentStarted": 40.0 },
+        "stats": [
+          { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 6.4 }
+        ]
+      },
+      "ratings": { "0": { "positionalRanking": 9, "totalRanking": 150, "totalRating": 20.0 } }
+    }
+  ]
+}

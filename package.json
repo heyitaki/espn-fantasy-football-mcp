@@ -1,0 +1,44 @@
+{
+  "name": "espn-fantasy-football-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for ESPN fantasy football: rosters, free agents, matchups, lineups, and waiver claims",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.test.json",
+    "start": "node dist/index.js",
+    "test": "node --test \"test/**/*.test.ts\""
+  },
+  "keywords": [
+    "mcp",
+    "espn",
+    "fantasy-football",
+    "model-context-protocol"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "espn-fantasy-football-mcp": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyitaki/espn-fantasy-football-mcp.git"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "typescript": "^5.9.3"
+  }
+}

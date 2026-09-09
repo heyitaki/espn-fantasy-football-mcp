@@ -1,0 +1,420 @@
+{
+  "id": 3243,
+  "seasonId": 2026,
+  "gameId": 1,
+  "segmentId": 0,
+  "scoringPeriodId": 5,
+  "status": {
+    "currentMatchupPeriod": 5,
+    "latestScoringPeriod": 5,
+    "firstScoringPeriod": 1,
+    "finalScoringPeriod": 17,
+    "isActive": true,
+    "waiverLastExecutionDate": 1791619200000
+  },
+  "settings": {
+    "name": "Balls",
+    "size": 2,
+    "rosterSettings": {
+      "isUsingUndroppableList": true,
+      "lineupSlotCounts": {
+        "0": 1, "1": 0, "2": 2, "3": 0, "4": 2, "5": 0, "6": 1, "7": 0, "8": 0, "9": 0,
+        "10": 0, "11": 0, "12": 0, "13": 0, "14": 0, "15": 0, "16": 1, "17": 1, "18": 0,
+        "19": 0, "20": 7, "21": 1, "22": 0, "23": 1, "24": 0
+      }
+    },
+    "acquisitionSettings": {
+      "acquisitionType": "WAIVERS_TRADITIONAL",
+      "acquisitionLimit": -1,
+      "acquisitionBudget": 100,
+      "isUsingAcquisitionBudget": false,
+      "waiverHours": 24,
+      "waiverOrderReset": true,
+      "waiverProcessDays": ["WEDNESDAY"],
+      "waiverProcessHour": 8
+    },
+    "scheduleSettings": {
+      "matchupPeriodCount": 14,
+      "playoffTeamCount": 6,
+      "playoffMatchupPeriodLength": 1
+    },
+    "tradeSettings": {
+      "deadlineDate": 1797145200000,
+      "vetoVotesRequired": 4,
+      "revisionHours": 24
+    }
+  },
+  "members": [
+    { "id": "{11111111-AAAA-BBBB-CCCC-DDDDDDDDDDDD}", "displayName": "manager_a", "firstName": "Manager", "lastName": "A" },
+    { "id": "{22222222-AAAA-BBBB-CCCC-DDDDDDDDDDDD}", "displayName": "manager_b", "firstName": "Manager", "lastName": "B" }
+  ],
+  "teams": [
+    {
+      "id": 7,
+      "abbrev": "GMW",
+      "name": "gibb me win",
+      "owners": ["{11111111-AAAA-BBBB-CCCC-DDDDDDDDDDDD}"],
+      "waiverRank": 9,
+      "playoffSeed": 2,
+      "points": 512.4,
+      "record": {
+        "overall": { "wins": 3, "losses": 1, "ties": 0, "pointsFor": 512.4, "pointsAgainst": 440.1, "streakType": "WIN", "streakLength": 2 }
+      },
+      "roster": {
+        "entries": [
+          {
+            "playerId": 3918298,
+            "lineupSlotId": 0,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "playerPoolEntry": {
+              "id": 3918298,
+              "onTeamId": 7,
+              "status": "ONTEAM",
+              "player": {
+                "id": 3918298,
+                "fullName": "Josh Allen",
+                "firstName": "Josh",
+                "lastName": "Allen",
+                "defaultPositionId": 1,
+                "proTeamId": 2,
+                "eligibleSlots": [0, 7, 20, 21],
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": { "percentOwned": 99.8, "percentChange": 0.02, "percentStarted": 96.4 },
+                "stats": [
+                  { "id": "002026", "seasonId": 2026, "scoringPeriodId": 0, "statSourceId": 0, "statSplitTypeId": 0, "appliedTotal": 104.6 },
+                  { "id": "102026", "seasonId": 2026, "scoringPeriodId": 0, "statSourceId": 1, "statSplitTypeId": 0, "appliedTotal": 398.2 },
+                  { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 24.1 },
+                  { "id": "0120264", "seasonId": 2026, "scoringPeriodId": 4, "statSourceId": 0, "statSplitTypeId": 1, "appliedTotal": 27.3 }
+                ]
+              }
+            }
+          },
+          {
+            "playerId": 4430807,
+            "lineupSlotId": 2,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "playerPoolEntry": {
+              "id": 4430807,
+              "onTeamId": 7,
+              "status": "ONTEAM",
+              "player": {
+                "id": 4430807,
+                "fullName": "Bijan Robinson",
+                "firstName": "Bijan",
+                "lastName": "Robinson",
+                "defaultPositionId": 2,
+                "proTeamId": 1,
+                "eligibleSlots": [2, 3, 23, 7, 20, 21],
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": { "percentOwned": 99.9, "percentChange": 0.0, "percentStarted": 98.9 },
+                "stats": [
+                  { "id": "002026", "seasonId": 2026, "scoringPeriodId": 0, "statSourceId": 0, "statSplitTypeId": 0, "appliedTotal": 81.2 },
+                  { "id": "102026", "seasonId": 2026, "scoringPeriodId": 0, "statSourceId": 1, "statSplitTypeId": 0, "appliedTotal": 301.5 },
+                  { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 18.7 }
+                ]
+              }
+            }
+          },
+          {
+            "playerId": 4890973,
+            "lineupSlotId": 2,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "playerPoolEntry": {
+              "id": 4890973,
+              "onTeamId": 7,
+              "status": "ONTEAM",
+              "player": {
+                "id": 4890973,
+                "fullName": "Ashton Jeanty",
+                "firstName": "Ashton",
+                "lastName": "Jeanty",
+                "defaultPositionId": 2,
+                "proTeamId": 13,
+                "eligibleSlots": [2, 3, 23, 7, 20, 21],
+                "injured": false,
+                "injuryStatus": "QUESTIONABLE",
+                "ownership": { "percentOwned": 99.5, "percentChange": -0.1, "percentStarted": 92.0 },
+                "stats": [
+                  { "id": "102026", "seasonId": 2026, "scoringPeriodId": 0, "statSourceId": 1, "statSplitTypeId": 0, "appliedTotal": 244.0 },
+                  { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 15.2 }
+                ]
+              }
+            }
+          },
+          {
+            "playerId": 4595348,
+            "lineupSlotId": 4,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "playerPoolEntry": {
+              "id": 4595348,
+              "onTeamId": 7,
+              "status": "ONTEAM",
+              "player": {
+                "id": 4595348,
+                "fullName": "Malik Nabers",
+                "firstName": "Malik",
+                "lastName": "Nabers",
+                "defaultPositionId": 3,
+                "proTeamId": 19,
+                "eligibleSlots": [3, 4, 5, 23, 7, 20, 21],
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": { "percentOwned": 99.7, "percentChange": 0.01, "percentStarted": 97.1 },
+                "stats": [
+                  { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 16.9 }
+                ]
+              }
+            }
+          },
+          {
+            "playerId": 4685472,
+            "lineupSlotId": 4,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "playerPoolEntry": {
+              "id": 4685472,
+              "onTeamId": 7,
+              "status": "ONTEAM",
+              "player": {
+                "id": 4685472,
+                "fullName": "Tetairoa McMillan",
+                "firstName": "Tetairoa",
+                "lastName": "McMillan",
+                "defaultPositionId": 3,
+                "proTeamId": 29,
+                "eligibleSlots": [3, 4, 5, 23, 7, 20, 21],
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": { "percentOwned": 97.2, "percentChange": -0.4, "percentStarted": 60.3 },
+                "stats": [
+                  { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 0 }
+                ]
+              }
+            }
+          },
+          {
+            "playerId": 4432665,
+            "lineupSlotId": 6,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "playerPoolEntry": {
+              "id": 4432665,
+              "onTeamId": 7,
+              "status": "ONTEAM",
+              "player": {
+                "id": 4432665,
+                "fullName": "Brock Bowers",
+                "firstName": "Brock",
+                "lastName": "Bowers",
+                "defaultPositionId": 4,
+                "proTeamId": 13,
+                "eligibleSlots": [4, 5, 6, 23, 7, 20, 21],
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": { "percentOwned": 99.6, "percentChange": 0.0, "percentStarted": 96.8 },
+                "stats": [
+                  { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 13.4 }
+                ]
+              }
+            }
+          },
+          {
+            "playerId": 4683062,
+            "lineupSlotId": 23,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "playerPoolEntry": {
+              "id": 4683062,
+              "onTeamId": 7,
+              "status": "ONTEAM",
+              "player": {
+                "id": 4683062,
+                "fullName": "Xavier Worthy",
+                "firstName": "Xavier",
+                "lastName": "Worthy",
+                "defaultPositionId": 3,
+                "proTeamId": 12,
+                "eligibleSlots": [3, 4, 5, 23, 7, 20, 21],
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": { "percentOwned": 95.0, "percentChange": -1.2, "percentStarted": 55.0 },
+                "stats": [
+                  { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 0 }
+                ]
+              }
+            }
+          },
+          {
+            "playerId": 4360234,
+            "lineupSlotId": 17,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "playerPoolEntry": {
+              "id": 4360234,
+              "onTeamId": 7,
+              "status": "ONTEAM",
+              "player": {
+                "id": 4360234,
+                "fullName": "Brandon Aubrey",
+                "firstName": "Brandon",
+                "lastName": "Aubrey",
+                "defaultPositionId": 5,
+                "proTeamId": 6,
+                "eligibleSlots": [17, 20, 21],
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": { "percentOwned": 99.1, "percentChange": 0.1, "percentStarted": 97.0 },
+                "stats": [
+                  { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 9.8 }
+                ]
+              }
+            }
+          },
+          {
+            "playerId": -16024,
+            "lineupSlotId": 16,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "playerPoolEntry": {
+              "id": -16024,
+              "onTeamId": 7,
+              "status": "ONTEAM",
+              "player": {
+                "id": -16024,
+                "fullName": "Chargers D/ST",
+                "firstName": "Chargers",
+                "lastName": "D/ST",
+                "defaultPositionId": 16,
+                "proTeamId": 24,
+                "eligibleSlots": [16, 20, 21],
+                "injured": false,
+                "ownership": { "percentOwned": 88.3, "percentChange": 2.5, "percentStarted": 70.2 },
+                "stats": [
+                  { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 7.1 }
+                ]
+              }
+            }
+          },
+          {
+            "playerId": 4429795,
+            "lineupSlotId": 20,
+            "acquisitionType": "ADD",
+            "injuryStatus": "NORMAL",
+            "playerPoolEntry": {
+              "id": 4429795,
+              "onTeamId": 7,
+              "status": "ONTEAM",
+              "player": {
+                "id": 4429795,
+                "fullName": "Braelon Allen",
+                "firstName": "Braelon",
+                "lastName": "Allen",
+                "defaultPositionId": 2,
+                "proTeamId": 20,
+                "eligibleSlots": [2, 3, 23, 7, 20, 21],
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": { "percentOwned": 61.4, "percentChange": 8.9, "percentStarted": 12.0 },
+                "stats": [
+                  { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 8.3 }
+                ]
+              }
+            }
+          },
+          {
+            "playerId": 4432708,
+            "lineupSlotId": 21,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "INJURY_RESERVE",
+            "playerPoolEntry": {
+              "id": 4432708,
+              "onTeamId": 7,
+              "status": "ONTEAM",
+              "player": {
+                "id": 4432708,
+                "fullName": "Tyler Warren",
+                "firstName": "Tyler",
+                "lastName": "Warren",
+                "defaultPositionId": 4,
+                "proTeamId": 11,
+                "eligibleSlots": [4, 5, 6, 23, 7, 20, 21],
+                "injured": true,
+                "injuryStatus": "INJURY_RESERVE",
+                "ownership": { "percentOwned": 70.2, "percentChange": -5.5, "percentStarted": 3.1 },
+                "stats": [
+                  { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 0 }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "abbrev": "DDB",
+      "name": "Deimon Devilbats",
+      "owners": ["{22222222-AAAA-BBBB-CCCC-DDDDDDDDDDDD}"],
+      "waiverRank": 1,
+      "playoffSeed": 9,
+      "points": 390.0,
+      "record": {
+        "overall": { "wins": 1, "losses": 3, "ties": 0, "pointsFor": 390.0, "pointsAgainst": 470.5, "streakType": "LOSS", "streakLength": 3 }
+      },
+      "roster": {
+        "entries": [
+          {
+            "playerId": 3916387,
+            "lineupSlotId": 0,
+            "acquisitionType": "DRAFT",
+            "injuryStatus": "NORMAL",
+            "playerPoolEntry": {
+              "id": 3916387,
+              "onTeamId": 3,
+              "status": "ONTEAM",
+              "player": {
+                "id": 3916387,
+                "fullName": "Lamar Jackson",
+                "firstName": "Lamar",
+                "lastName": "Jackson",
+                "defaultPositionId": 1,
+                "proTeamId": 33,
+                "eligibleSlots": [0, 7, 20, 21],
+                "injured": false,
+                "injuryStatus": "ACTIVE",
+                "ownership": { "percentOwned": 99.9, "percentChange": 0.0, "percentStarted": 97.7 },
+                "stats": [
+                  { "id": "1120265", "seasonId": 2026, "scoringPeriodId": 5, "statSourceId": 1, "statSplitTypeId": 1, "appliedTotal": 23.0 }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "schedule": [
+    {
+      "id": 1,
+      "matchupPeriodId": 1,
+      "home": { "teamId": 7, "totalPoints": 130.5 },
+      "away": { "teamId": 3, "totalPoints": 110.2 },
+      "winner": "HOME",
+      "playoffTierType": "NONE"
+    },
+    {
+      "id": 21,
+      "matchupPeriodId": 5,
+      "home": { "teamId": 3, "totalPoints": 0, "totalProjectedPointsLive": 101.4 },
+      "away": { "teamId": 7, "totalPoints": 0, "totalProjectedPointsLive": 113.5 },
+      "winner": "UNDECIDED",
+      "playoffTierType": "NONE"
+    }
+  ]
+}

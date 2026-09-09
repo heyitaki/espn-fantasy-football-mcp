@@ -1,0 +1,570 @@
+{
+ "settings": {
+  "proTeams": [
+   {
+    "id": 11,
+    "abbrev": "IND",
+    "location": "Indianapolis",
+    "name": "Colts",
+    "byeWeek": 13,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872985,
+       "awayProTeamId": 11,
+       "homeProTeamId": 23,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 12,
+    "abbrev": "KC",
+    "location": "Kansas City",
+    "name": "Chiefs",
+    "byeWeek": 5,
+    "proGamesByScoringPeriod": {}
+   },
+   {
+    "id": 13,
+    "abbrev": "LV",
+    "location": "Las Vegas",
+    "name": "Raiders",
+    "byeWeek": 13,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872986,
+       "awayProTeamId": 13,
+       "homeProTeamId": 17,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 14,
+    "abbrev": "LAR",
+    "location": "Los Angeles",
+    "name": "Rams",
+    "byeWeek": 11,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872994,
+       "awayProTeamId": 2,
+       "homeProTeamId": 14,
+       "date": 1791850500000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 15,
+    "abbrev": "MIA",
+    "location": "Miami",
+    "name": "Dolphins",
+    "byeWeek": 6,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872982,
+       "awayProTeamId": 4,
+       "homeProTeamId": 15,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 16,
+    "abbrev": "MIN",
+    "location": "Minnesota",
+    "name": "Vikings",
+    "byeWeek": 6,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872987,
+       "awayProTeamId": 16,
+       "homeProTeamId": 18,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 17,
+    "abbrev": "NE",
+    "location": "New England",
+    "name": "Patriots",
+    "byeWeek": 11,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872986,
+       "awayProTeamId": 13,
+       "homeProTeamId": 17,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 18,
+    "abbrev": "NO",
+    "location": "New Orleans",
+    "name": "Saints",
+    "byeWeek": 8,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872987,
+       "awayProTeamId": 16,
+       "homeProTeamId": 18,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 19,
+    "abbrev": "NYG",
+    "location": "New York",
+    "name": "Giants",
+    "byeWeek": 8,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872988,
+       "awayProTeamId": 19,
+       "homeProTeamId": 28,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 20,
+    "abbrev": "NYJ",
+    "location": "New York",
+    "name": "Jets",
+    "byeWeek": 13,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872983,
+       "awayProTeamId": 5,
+       "homeProTeamId": 20,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 21,
+    "abbrev": "PHI",
+    "location": "Philadelphia",
+    "name": "Eagles",
+    "byeWeek": 10,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872981,
+       "awayProTeamId": 21,
+       "homeProTeamId": 30,
+       "date": 1791725400000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 22,
+    "abbrev": "ARI",
+    "location": "Arizona",
+    "name": "Cardinals",
+    "byeWeek": 14,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872991,
+       "awayProTeamId": 8,
+       "homeProTeamId": 22,
+       "date": 1791750300000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 23,
+    "abbrev": "PIT",
+    "location": "Pittsburgh",
+    "name": "Steelers",
+    "byeWeek": 9,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872985,
+       "awayProTeamId": 11,
+       "homeProTeamId": 23,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 24,
+    "abbrev": "LAC",
+    "location": "Los Angeles",
+    "name": "Chargers",
+    "byeWeek": 7,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872989,
+       "awayProTeamId": 7,
+       "homeProTeamId": 24,
+       "date": 1791749100000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 25,
+    "abbrev": "SF",
+    "location": "San Francisco",
+    "name": "49ers",
+    "byeWeek": 8,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872992,
+       "awayProTeamId": 25,
+       "homeProTeamId": 26,
+       "date": 1791750300000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 26,
+    "abbrev": "SEA",
+    "location": "Seattle",
+    "name": "Seahawks",
+    "byeWeek": 11,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872992,
+       "awayProTeamId": 25,
+       "homeProTeamId": 26,
+       "date": 1791750300000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 27,
+    "abbrev": "TB",
+    "location": "Tampa Bay",
+    "name": "Buccaneers",
+    "byeWeek": 10,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872980,
+       "awayProTeamId": 27,
+       "homeProTeamId": 6,
+       "date": 1791504900000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 28,
+    "abbrev": "WSH",
+    "location": "Washington",
+    "name": "Commanders",
+    "byeWeek": 7,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872988,
+       "awayProTeamId": 19,
+       "homeProTeamId": 28,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 29,
+    "abbrev": "CAR",
+    "location": "Carolina",
+    "name": "Panthers",
+    "byeWeek": 5,
+    "proGamesByScoringPeriod": {}
+   },
+   {
+    "id": 30,
+    "abbrev": "JAX",
+    "location": "Jacksonville",
+    "name": "Jaguars",
+    "byeWeek": 7,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872981,
+       "awayProTeamId": 21,
+       "homeProTeamId": 30,
+       "date": 1791725400000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 33,
+    "abbrev": "BAL",
+    "location": "Baltimore",
+    "name": "Ravens",
+    "byeWeek": 13,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872993,
+       "awayProTeamId": 33,
+       "homeProTeamId": 1,
+       "date": 1791764400000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 34,
+    "abbrev": "HOU",
+    "location": "Houston",
+    "name": "Texans",
+    "byeWeek": 8,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872984,
+       "awayProTeamId": 34,
+       "homeProTeamId": 10,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 0,
+    "abbrev": "FA",
+    "location": "",
+    "name": "FA",
+    "byeWeek": 0,
+    "proGamesByScoringPeriod": {}
+   },
+   {
+    "id": 1,
+    "abbrev": "ATL",
+    "location": "Atlanta",
+    "name": "Falcons",
+    "byeWeek": 11,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872993,
+       "awayProTeamId": 33,
+       "homeProTeamId": 1,
+       "date": 1791764400000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 2,
+    "abbrev": "BUF",
+    "location": "Buffalo",
+    "name": "Bills",
+    "byeWeek": 7,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872994,
+       "awayProTeamId": 2,
+       "homeProTeamId": 14,
+       "date": 1791850500000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 3,
+    "abbrev": "CHI",
+    "location": "Chicago",
+    "name": "Bears",
+    "byeWeek": 10,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872990,
+       "awayProTeamId": 3,
+       "homeProTeamId": 9,
+       "date": 1791750300000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 4,
+    "abbrev": "CIN",
+    "location": "Cincinnati",
+    "name": "Bengals",
+    "byeWeek": 6,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872982,
+       "awayProTeamId": 4,
+       "homeProTeamId": 15,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 5,
+    "abbrev": "CLE",
+    "location": "Cleveland",
+    "name": "Browns",
+    "byeWeek": 11,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872983,
+       "awayProTeamId": 5,
+       "homeProTeamId": 20,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 6,
+    "abbrev": "DAL",
+    "location": "Dallas",
+    "name": "Cowboys",
+    "byeWeek": 14,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872980,
+       "awayProTeamId": 27,
+       "homeProTeamId": 6,
+       "date": 1791504900000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 7,
+    "abbrev": "DEN",
+    "location": "Denver",
+    "name": "Broncos",
+    "byeWeek": 10,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872989,
+       "awayProTeamId": 7,
+       "homeProTeamId": 24,
+       "date": 1791749100000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 8,
+    "abbrev": "DET",
+    "location": "Detroit",
+    "name": "Lions",
+    "byeWeek": 6,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872991,
+       "awayProTeamId": 8,
+       "homeProTeamId": 22,
+       "date": 1791750300000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 9,
+    "abbrev": "GB",
+    "location": "Green Bay",
+    "name": "Packers",
+    "byeWeek": 11,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872990,
+       "awayProTeamId": 3,
+       "homeProTeamId": 9,
+       "date": 1791750300000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   },
+   {
+    "id": 10,
+    "abbrev": "TEN",
+    "location": "Tennessee",
+    "name": "Titans",
+    "byeWeek": 9,
+    "proGamesByScoringPeriod": {
+     "5": [
+      {
+       "id": 401872984,
+       "awayProTeamId": 34,
+       "homeProTeamId": 10,
+       "date": 1791738000000,
+       "scoringPeriodId": 5
+      }
+     ]
+    }
+   }
+  ]
+ }
+}
